@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="unnamed.jpg" alt="imagen banner del tecnologico superior de Jalisco">
+    </header>
+    <main>
+        <div class="formulario">
+            <h2>Favor de ingresar los siguientes datos: </h2>
+            <form onsubmit="obtener_datos(event)">
+                <label for="variable_a">Variable A:  </label>
+                <input type="text" name="variable_a" placeholder="Ejemplo: 45" value="" id="variable_a"><br>
+                <label for="variable_da">Variable dA: </label>
+                <input type="text" name="variable_da" placeholder="Ejemplo: 45" value="" id="variable_da"><br>
+                <label for="variable_b">Variable B:  </label>
+                <input type="text" name="variable_b" placeholder="Ejemplo: 45" value="" id="variable_b"><br>
+                <label for="variable_db">Variable dB: </label>
+                <input type="text" name="variable_db" placeholder="Ejemplo: 45" value="" id="variable_db"><br>
+                <label for="operaciones">Operación a realizar: </label>
+                <select name="operaciones" id="operaciones">
+                    <option value="suma">Suma</option>
+                    <option value="multiplicacion">Multiplicación</option>
+                    <option value="division">División</option>
+                </select><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="resultado">
+            <h2 id="resultado">Resultado:</h2>
+            <p id="resultado_variables"></p>
+            <p id="resultado_derivadas"></p>
+            <p id="resultado_truncado"></p>
+            <p id="resultado_redondeado"></p>
+        </div>
+    </main>
+    <footer>
+        <img src="unnamed.jpg" alt="imagen banner del tecnologico superior de Jalisco">
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
