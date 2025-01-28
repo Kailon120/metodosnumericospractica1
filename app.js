@@ -67,5 +67,5 @@ function imprimir_resultado(operaciones,resultado){
     document.getElementById("resultado_variables").textContent = `Variable ${operaciones}: ${resultado.operacion}`;
     document.getElementById("resultado_derivadas").textContent = `Derivada ${operaciones}: ${resultado.operacion_derivada}`;
     document.getElementById("resultado_truncado").textContent = `Derivada truncada ${operaciones}: ${truncar(resultado.operacion_derivada,4)}`;
-    document.getElementById("resultado_redondeado").textContent = `Derivada redondeada${operaciones}: ${redondear(resultado.operacion_derivada,0)}`;
+    document.getElementById("resultado_redondeado").textContent = `Derivada redondeada ${operaciones}: ${redondear(resultado.operacion_derivada,0)}`;
 }
